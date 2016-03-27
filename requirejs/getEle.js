@@ -1,6 +1,6 @@
 define(function  () {
 	return {
-		getEle:function (str) {
+		$:function (str) {
 			return document.getElementById(str);
 		}
 	}
