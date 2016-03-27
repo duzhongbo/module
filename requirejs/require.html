@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+
+
+<style type="text/css">
+.box{width:200px;height:200px;background:#999;}
+</style>
+<div class="box" id="J_box"></div>
+
+
+<script data-main="main" src="lib/require.js"></script>
+<script type="text/javascript">
+seajs.use("./main.js", function(xxx) {
+	J_box.onclick=function () {
+		xxx.set("J_box","green");
+	}
+    
+});
+
+
+</script>
+
+	
+</body>
+</html>
