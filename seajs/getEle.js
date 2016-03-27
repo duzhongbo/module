@@ -26,7 +26,7 @@
 (
     function (root, factory) {
         if (typeof define === 'function' && (define.amd || define.cmd)) {
-            // AMD
+            // AMD and CMD
             define(factory);
         } else if (typeof exports === 'object') {
             // Node, CommonJS-like
@@ -41,7 +41,7 @@
             return document.getElementById(str);
         };
 
-        //    exposed public method
+        //exposed public method
         return {
             $:$
         };
