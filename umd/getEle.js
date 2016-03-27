@@ -25,7 +25,9 @@
         };
 
         //    exposed public method
-        return g;
+        return {
+            g:g
+        }
     })
 
 );
